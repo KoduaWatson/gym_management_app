@@ -1,0 +1,65 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-11-30 12:55:28.949982",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "class_name",
+  "class_size",
+  "session_days",
+  "session_time",
+  "class_applicant"
+ ],
+ "fields": [
+  {
+   "fieldname": "class_name",
+   "fieldtype": "Data",
+   "label": "Class Name"
+  },
+  {
+   "fieldname": "class_size",
+   "fieldtype": "Int",
+   "label": "Class size"
+  },
+  {
+   "fieldname": "session_days",
+   "fieldtype": "Data",
+   "label": "Session Days"
+  },
+  {
+   "fieldname": "session_time",
+   "fieldtype": "Time",
+   "label": "Session Time"
+  },
+  {
+   "fieldname": "class_applicant",
+   "fieldtype": "Data",
+   "label": "Class Applicant"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-30 12:57:42.053834",
+ "modified_by": "Administrator",
+ "module": "Gym Management App",
+ "name": "Gym Class Booking",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
