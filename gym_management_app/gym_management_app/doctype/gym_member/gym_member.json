@@ -103,7 +103,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-11-30 15:53:30.668884",
+ "modified": "2023-11-30 17:15:16.845052",
  "modified_by": "Administrator",
  "module": "Gym Management App",
  "name": "Gym Member",
@@ -127,5 +127,5 @@
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
- "title_field": "first_name"
+ "title_field": "full_name"
 }

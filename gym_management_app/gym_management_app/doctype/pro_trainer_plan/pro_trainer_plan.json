@@ -1,0 +1,116 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{exercise_name}-{focus}",
+ "creation": "2023-11-30 12:41:32.547295",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "trainer",
+  "trainer_email",
+  "column_break_ccoc",
+  "type",
+  "focus",
+  "trainer_fon",
+  "workout_plan_details_section",
+  "exercise_name",
+  "sets",
+  "column_break_vfzk",
+  "picture",
+  "reps"
+ ],
+ "fields": [
+  {
+   "fieldname": "trainer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Trainer",
+   "options": "Gym Trainer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ccoc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "label": "Type"
+  },
+  {
+   "fieldname": "focus",
+   "fieldtype": "Data",
+   "label": "Focus "
+  },
+  {
+   "fieldname": "workout_plan_details_section",
+   "fieldtype": "Section Break",
+   "label": "Workout Plan Details"
+  },
+  {
+   "fieldname": "exercise_name",
+   "fieldtype": "Data",
+   "label": "Exercise Name"
+  },
+  {
+   "fieldname": "sets",
+   "fieldtype": "Int",
+   "label": "Sets",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "column_break_vfzk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "picture",
+   "fieldtype": "Attach Image",
+   "label": "Click Image Link"
+  },
+  {
+   "fieldname": "reps",
+   "fieldtype": "Data",
+   "label": "Reps"
+  },
+  {
+   "fetch_from": "trainer.email",
+   "fieldname": "trainer_email",
+   "fieldtype": "Data",
+   "label": "Trainer Email",
+   "options": "Email",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "trainer.mobile_fon",
+   "fieldname": "trainer_fon",
+   "fieldtype": "Data",
+   "label": "Trainer fon",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-12-01 11:32:41.465657",
+ "modified_by": "Administrator",
+ "module": "Gym Management App",
+ "name": "Pro Trainer Plan",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

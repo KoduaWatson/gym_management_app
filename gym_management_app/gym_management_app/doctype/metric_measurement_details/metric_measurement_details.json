@@ -1,0 +1,65 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-12-02 22:00:10.895711",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "metric_measurements_section",
+  "membership_id",
+  "metric_name",
+  "reading",
+  "unit",
+  "measurement_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "metric_measurements_section",
+   "fieldtype": "Section Break",
+   "label": "Metric Measurements"
+  },
+  {
+   "fieldname": "metric_name",
+   "fieldtype": "Link",
+   "label": "Metric Name",
+   "options": "Trackable Body Metrics"
+  },
+  {
+   "fieldname": "reading",
+   "fieldtype": "Int",
+   "label": "Reading",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "unit",
+   "fieldtype": "Data",
+   "label": "Unit",
+   "read_only": 1
+  },
+  {
+   "fieldname": "membership_id",
+   "fieldtype": "Data",
+   "label": "Membership ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "measurement_date",
+   "fieldtype": "Date",
+   "label": "Measurement Date",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-12-03 08:13:55.577192",
+ "modified_by": "Administrator",
+ "module": "Gym Management App",
+ "name": "Metric Measurement Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

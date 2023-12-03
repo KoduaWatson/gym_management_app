@@ -1,39 +1,21 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{member_name}|{end_date}",
  "creation": "2023-11-30 12:37:56.855083",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "name_of_plan",
-  "trainer",
-  "requirements",
+  "membership_id",
   "start_date",
-  "end_date"
+  "end_date",
+  "member_name",
+  "subscription_details_section",
+  "pro_training_details"
  ],
  "fields": [
   {
-   "fieldname": "name_of_plan",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Name of Plan",
-   "reqd": 1
-  },
-  {
-   "fieldname": "trainer",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Trainer",
-   "reqd": 1
-  },
-  {
-   "fieldname": "requirements",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Requirements",
-   "reqd": 1
-  },
-  {
+   "default": "Today",
    "fieldname": "start_date",
    "fieldtype": "Date",
    "in_list_view": 1,
@@ -41,18 +23,46 @@
    "reqd": 1
   },
   {
+   "fetch_from": "membership_id.end_date",
    "fieldname": "end_date",
    "fieldtype": "Date",
    "label": "End Date",
    "reqd": 1
+  },
+  {
+   "fieldname": "membership_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Membership ID",
+   "options": "Gym Membership",
+   "reqd": 1
+  },
+  {
+   "fieldname": "subscription_details_section",
+   "fieldtype": "Section Break",
+   "label": "Subscription Details"
+  },
+  {
+   "fieldname": "pro_training_details",
+   "fieldtype": "Table",
+   "label": "Pro Training Details",
+   "options": "Pro trainer subscription details"
+  },
+  {
+   "fetch_from": "membership_id.member_name",
+   "fieldname": "member_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Member Name"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-11-30 12:40:59.309041",
+ "modified": "2023-12-01 12:13:47.716039",
  "modified_by": "Administrator",
  "module": "Gym Management App",
  "name": "Pro Trainer Plan Subscription",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

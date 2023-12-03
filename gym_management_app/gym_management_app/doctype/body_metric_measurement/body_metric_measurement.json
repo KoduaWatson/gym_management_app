@@ -1,0 +1,87 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{membership_id} | {measurement_date}",
+ "creation": "2023-12-02 20:29:46.848804",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "membership_id",
+  "measurement_date",
+  "column_break_egux",
+  "membership_end_date",
+  "time_in",
+  "measurement_details_section",
+  "metric"
+ ],
+ "fields": [
+  {
+   "fieldname": "membership_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Membership ID",
+   "options": "Gym Membership",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "membership_id.end_date",
+   "fieldname": "membership_end_date",
+   "fieldtype": "Data",
+   "label": "Membership End Date",
+   "read_only": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "measurement_date",
+   "fieldtype": "Date",
+   "label": "Measurement Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "time_in",
+   "fieldtype": "Data",
+   "label": "Time In",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_egux",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "measurement_details_section",
+   "fieldtype": "Section Break",
+   "label": "Measurement Details"
+  },
+  {
+   "fieldname": "metric",
+   "fieldtype": "Table",
+   "label": "Metric",
+   "options": "Metric Measurement Details"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-12-03 08:21:44.752116",
+ "modified_by": "Administrator",
+ "module": "Gym Management App",
+ "name": "Body Metric Measurement",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,14 +1,14 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:name_of_trainer",
  "creation": "2023-11-30 11:15:43.690754",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "trainer_details_section",
-  "name1",
+  "name_of_trainer",
   "email",
-  "trainer_plan",
   "column_break_pcpq",
   "gender",
   "mobile_fon"
@@ -20,16 +20,10 @@
    "label": "TRAINER DETAILS"
   },
   {
-   "fieldname": "name1",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Name",
-   "reqd": 1
-  },
-  {
    "fieldname": "gender",
-   "fieldtype": "Data",
-   "label": "Gender"
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Female\nMale"
   },
   {
    "fieldname": "email",
@@ -47,23 +41,25 @@
    "reqd": 1
   },
   {
-   "fieldname": "trainer_plan",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Trainer Plan",
-   "reqd": 1
-  },
-  {
    "fieldname": "column_break_pcpq",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "name_of_trainer",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name of Trainer",
+   "reqd": 1,
+   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-11-30 11:29:29.634285",
+ "modified": "2023-12-01 07:39:52.719956",
  "modified_by": "Administrator",
  "module": "Gym Management App",
  "name": "Gym Trainer",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

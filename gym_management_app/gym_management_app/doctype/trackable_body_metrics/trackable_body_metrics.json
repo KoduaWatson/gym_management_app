@@ -1,39 +1,38 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2023-11-30 12:41:32.547295",
+ "autoname": "field:metric",
+ "creation": "2023-12-02 20:06:31.592067",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "name_of_plan",
-  "focus_area",
-  "activities"
+  "metric",
+  "measuring_unit"
  ],
  "fields": [
   {
-   "fieldname": "name_of_plan",
+   "fieldname": "metric",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Name of Plan",
+   "label": "Metric",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "measuring_unit",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Measuring Unit",
    "reqd": 1
-  },
-  {
-   "fieldname": "focus_area",
-   "fieldtype": "Data",
-   "label": "Focus Area"
-  },
-  {
-   "fieldname": "activities",
-   "fieldtype": "Data",
-   "label": "Activities"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-11-30 12:43:41.766117",
+ "modified": "2023-12-02 20:10:14.217239",
  "modified_by": "Administrator",
  "module": "Gym Management App",
- "name": "Pro Trainer Plans",
+ "name": "Trackable Body Metrics",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
