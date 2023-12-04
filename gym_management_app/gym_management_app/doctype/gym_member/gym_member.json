@@ -56,8 +56,7 @@
    "fieldname": "contact_person",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Contact Person",
-   "reqd": 1
+   "label": "Contact Person"
   },
   {
    "fieldname": "column_break_qmin",
@@ -91,8 +90,7 @@
   {
    "fieldname": "contact_person_mobile_nr",
    "fieldtype": "Data",
-   "label": "Contact Person Mobile Nr",
-   "reqd": 1
+   "label": "Contact Person Mobile Nr"
   },
   {
    "fieldname": "full_name",
@@ -103,7 +101,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-11-30 17:15:16.845052",
+ "modified": "2023-12-04 10:43:21.604041",
  "modified_by": "Administrator",
  "module": "Gym Management App",
  "name": "Gym Member",

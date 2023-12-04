@@ -1,0 +1,61 @@
+{
+ "add_total_row": 0,
+ "columns": [
+  {
+   "fieldname": "membership_id",
+   "fieldtype": "Data",
+   "label": "Membership ID",
+   "width": 0
+  },
+  {
+   "fieldname": "class_name",
+   "fieldtype": "Data",
+   "label": "Class Name",
+   "width": 0
+  },
+  {
+   "fieldname": "booking_date",
+   "fieldtype": "Data",
+   "label": "Booking Date",
+   "width": 0
+  },
+  {
+   "fieldname": "price_of_class",
+   "fieldtype": "Currency",
+   "label": "Price of Class",
+   "width": 0
+  }
+ ],
+ "creation": "2023-12-04 12:11:34.384858",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [
+  {
+   "fieldname": "membership_id",
+   "fieldtype": "Link",
+   "label": "Membership ID",
+   "mandatory": 0,
+   "options": "Gym Membership",
+   "wildcard_filter": 0
+  }
+ ],
+ "idx": 0,
+ "is_standard": "Yes",
+ "json": "{}",
+ "letterhead": null,
+ "modified": "2023-12-04 12:11:34.384858",
+ "modified_by": "Administrator",
+ "module": "Gym Management App",
+ "name": "Weekly group class summary",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Group Class Booking",
+ "report_name": "Weekly group class summary",
+ "report_type": "Report Builder",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ]
+}

@@ -1,0 +1,57 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<h1>{{ title }}</h1>
+<img src="{{ doc.workoutplan_image }}" alt="workoutplan_image"><br>
+<a href="http://15latest.local:8000/gym-registration/new" class="btn btn-warning btn-outline-dark m-5">
+    Click to register
+</a>
+<p>
+    {{ doc.things_to_note }}
+</p>
+
+{% set workout_activities = doc.activities %}
+
+<table class="table table-bordered">
+    <thead class="thead-dark">
+        <tr>
+          <th scope="col">Nr.</th>
+          <th scope="col">Day</th>
+          <th scope="col">Focus</th>
+          <th scope="col">Exercise</th>
+          <th scope="col">Sets</th>
+          <th scope="col">Reps</th>
+        </tr>
+      </thead>
+    <tbody>
+    {% for workout_activity in workout_activities %}
+            <tr>
+                <td>
+                    {{ loop.index }}
+                </td>
+                <td>
+                    {{ workout_activity.day }}
+                </td>
+                <td>
+                    {{ workout_activity.goal }}
+                </td>
+                <td>
+                    {{ workout_activity.exercise }}
+                </td>
+                <td>
+                    {{ workout_activity.sets }}
+                </td>
+                <td>
+                    {{ workout_activity.reps }}
+                </td>
+            </tr>
+    {% endfor %}
+    </tbody>
+</table>
+<a href="http://15latest.local:8000/gym-registration/new" class="btn btn-warning">
+    Click to register
+</a>
+{% endblock %}
+
+
+<!-- this is a sample default web page template -->

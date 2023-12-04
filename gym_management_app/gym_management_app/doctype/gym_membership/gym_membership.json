@@ -14,7 +14,8 @@
   "age",
   "end_date",
   "type_of_membership",
-  "amended_from"
+  "amended_from",
+  "allocated_trainer"
  ],
  "fields": [
   {
@@ -76,12 +77,18 @@
    "fieldname": "member_name",
    "fieldtype": "Data",
    "label": "Member Name"
+  },
+  {
+   "fieldname": "allocated_trainer",
+   "fieldtype": "Link",
+   "label": "Allocated Trainer",
+   "options": "Gym Trainer"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-11-30 21:02:38.883918",
+ "modified": "2023-12-04 14:37:21.401346",
  "modified_by": "Administrator",
  "module": "Gym Management App",
  "name": "Gym Membership",

@@ -1,0 +1,14 @@
+<div>
+	<div class="card mb-5" style="width: 40rem;">
+		<img src="{{ doc.workoutplan_image }}" class="card-img-top" alt="Workout Plan Image">
+		<div class="card-body">
+			<h5 class="card-title">
+				{{ doc.get_title() or doc.name }}
+			</h5>
+			<a href="{{ doc.route }}" class="btn btn-warning">
+				View Details
+			</a>
+		</div>
+	</div>
+</div>
+<!-- this is a sample default list template -->

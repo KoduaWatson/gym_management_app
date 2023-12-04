@@ -1,0 +1,107 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{member_name} | {class_name} | {booking_date}",
+ "creation": "2023-12-03 16:01:12.800601",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_ho4o",
+  "membership_id",
+  "class_name",
+  "booking_date",
+  "column_break_lerl",
+  "amended_from",
+  "membership_end_date",
+  "price_of_class",
+  "member_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_ho4o",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Group Class Booking",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "class_name",
+   "fieldtype": "Link",
+   "label": "Class Name",
+   "options": "Group Class Types"
+  },
+  {
+   "fieldname": "membership_id",
+   "fieldtype": "Link",
+   "label": "Membership ID",
+   "options": "Gym Membership"
+  },
+  {
+   "fetch_from": "membership_id.end_date",
+   "fieldname": "membership_end_date",
+   "fieldtype": "Data",
+   "label": "Membership End Date",
+   "read_only": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "booking_date",
+   "fieldtype": "Date",
+   "label": "Booking Date"
+  },
+  {
+   "fieldname": "price_of_class",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Price of class",
+   "non_negative": 1,
+   "precision": "2",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_lerl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "membership_id.member_name",
+   "fieldname": "member_name",
+   "fieldtype": "Data",
+   "label": "Member Name",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-12-04 12:07:00.971639",
+ "modified_by": "Administrator",
+ "module": "Gym Management App",
+ "name": "Group Class Booking",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
