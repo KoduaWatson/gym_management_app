@@ -10,12 +10,13 @@
   "member_name",
   "start_date",
   "workout_plan",
+  "allocated_trainer",
   "column_break_bzyt",
   "age",
   "end_date",
   "type_of_membership",
   "amended_from",
-  "allocated_trainer"
+  "trainer_contact"
  ],
  "fields": [
   {
@@ -82,13 +83,22 @@
    "fieldname": "allocated_trainer",
    "fieldtype": "Link",
    "label": "Allocated Trainer",
-   "options": "Gym Trainer"
+   "options": "Gym Trainer",
+   "read_only": 1,
+   "read_only_depends_on": "allocated_trainer != undefined;"
+  },
+  {
+   "fetch_from": "allocated_trainer.email",
+   "fieldname": "trainer_contact",
+   "fieldtype": "Data",
+   "label": "Trainer Contact",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-12-04 14:37:21.401346",
+ "modified": "2023-12-04 16:58:27.814487",
  "modified_by": "Administrator",
  "module": "Gym Management App",
  "name": "Gym Membership",
