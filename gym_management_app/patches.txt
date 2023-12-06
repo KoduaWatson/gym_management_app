@@ -4,3 +4,5 @@
 
 [post_model_sync]
 # Patches added in this section will be executed after doctypes are migrated
+#gym_management_app.doctype.gym_membership.patches.set_unallocated_trainer
+#gym_management_app.doctype.group_class_pricelist.pricelistpatch.revised_group_class_pricelist
