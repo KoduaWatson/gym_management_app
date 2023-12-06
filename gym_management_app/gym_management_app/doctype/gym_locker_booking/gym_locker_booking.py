@@ -17,3 +17,5 @@ class GymLockerBooking(Document):
 		booking_expiry = self.expiry
 		if getdate(booking_expiry) < getdate(today()):
 			frappe.db.set_value('Gym Lockers', self.locker_id, 'availability' 'Available')
+
+
