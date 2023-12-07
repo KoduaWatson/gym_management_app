@@ -1,0 +1,105 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-12-07 06:39:48.386025",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "company_details_section",
+  "name_of_establishment",
+  "year_of_incorporation",
+  "public_health_certificate",
+  "telephone",
+  "founder",
+  "column_break_bbiv",
+  "address",
+  "opening_hours",
+  "email",
+  "bank",
+  "website"
+ ],
+ "fields": [
+  {
+   "fieldname": "company_details_section",
+   "fieldtype": "Section Break",
+   "label": "Company Details"
+  },
+  {
+   "fieldname": "name_of_establishment",
+   "fieldtype": "Data",
+   "label": "Name of Establishment"
+  },
+  {
+   "fieldname": "year_of_incorporation",
+   "fieldtype": "Data",
+   "label": "Year of Incorporation"
+  },
+  {
+   "fieldname": "public_health_certificate",
+   "fieldtype": "Data",
+   "label": "Public Health Certificate"
+  },
+  {
+   "fieldname": "telephone",
+   "fieldtype": "Data",
+   "label": "Telephone"
+  },
+  {
+   "fieldname": "founder",
+   "fieldtype": "Data",
+   "label": "Founder"
+  },
+  {
+   "fieldname": "column_break_bbiv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "opening_hours",
+   "fieldtype": "Data",
+   "label": "Opening Hours"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "bank",
+   "fieldtype": "Data",
+   "label": "Bank"
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Data",
+   "label": "Website"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2023-12-07 06:44:22.550776",
+ "modified_by": "Administrator",
+ "module": "Gym Management App",
+ "name": "Gym Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
