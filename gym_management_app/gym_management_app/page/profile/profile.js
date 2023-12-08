@@ -38,18 +38,18 @@ make: function() {
 	// })
 //}
 
-let pagename = "template"
+// let pagename = "template"
 
-let pagebody = frappe
-.call(
-  "gym_management_app.gym_management_app.page.template.newprofile.get_profile_html",
-  {
-	pagename: pagename
-  }
-)
-.then((data) => {
-  $("#employee-profile").html(data.message);
-});
+// let pagebody = frappe
+// .call(
+//   "gym_management_app.gym_management_app.page.template.newprofile.get_profile_html",
+//   {
+// 	pagename: pagename
+//   }
+// )
+// .then((data) => {
+//   $("#employee-profile").html(data.message);
+// });
 
 
 // membership_details()
